@@ -2,25 +2,29 @@
     background-color: #fabfbf;
     display: grid;
     grid-template-areas: "img" "titulo" "Loggin";
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 0.5fr 1fr 1fr;
     grid-template-rows: 0.5fr;
     justify-items: center;
+    align-items: center;
 }
 
 .titulo{
     grid-area: "titulo";
 }
 
-.imagen{
+.logo{
     grid-area: "img";
     width: 100%;
 }
-form{
+
+.ingresar{
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr;
     justify-items: center;
+    align-items: center;
 }
+
 input{
     width: 90%;
 }

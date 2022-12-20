@@ -2,8 +2,8 @@
     background-color: #fabfbf;
     display: grid;
     grid-template-areas: "img" "titulo" "Loggin";
-    grid-template-columns: 0.5fr 1fr 1fr;
-    grid-template-rows: 0.5fr;
+    grid-template-columns: 0.5fr 2fr 1fr;
+    grid-template-rows: 1fr;
     justify-items: center;
     align-items: center;
 }
@@ -14,22 +14,23 @@
 
 .logo{
     grid-area: "img";
-    width: 100%;
+    width: 50%;
 }
 
 .ingresar{
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
+    display: flex;
     justify-items: center;
     align-items: center;
+    flex-direction: column;
+    padding: 2%;
 }
 
-input{
+.ingresar input{
     width: 90%;
+    margin-top: 3%;
 }
 
 .button{
     width: 90%;
-    grid-area: "loggin";
+    margin-top: 3%;
 }
